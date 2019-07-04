@@ -1,0 +1,251 @@
+/* ======== body all three pages ======== */
+/* Like this feature includes padding and border in total width & height NICE */
+* {
+box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  background: url("../images/concrete_seamless.png");
+  color: grey;
+} 
+
+
+p {
+  margin-bottom: 0;
+}
+
+p:last-child { 
+  margin-bottom: 20px;
+}
+
+h1, h2, h3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #4aaaa5;
+  margin: 0 0 20px 0;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 60px;
+  border-bottom: 1px solid grey;
+  width: 100%;
+}
+
+h2, h3 {
+  font-size: 22px;
+}
+
+  /* ======== Navbar header all three pages ======== */
+
+.navbar {
+  background: #4aaaa5;
+  /* height: 90px; */
+}
+
+.navbar-custom {
+  background-color: #4aaaa5;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(250, 249, 250);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250, 249, 250, 1.0)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-brand {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: white;
+  font-size: 2.0em;
+  text-align: center;	
+  padding: 20px 0 20px 100px;
+  float: none;
+}
+
+.nav-link { 
+  font-weight: 900;
+}
+     
+  /* ============== About Me specifics =============== */
+
+#aboutContainer  {
+  /* margin: 0 0 40px 0; */
+  margin: 20px 0 10px 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 525px;
+  float: left;
+  border: 1px solid lightgrey;
+  background-color: white;
+}
+
+  /* for about me photo */
+#about-image {
+  float: left;
+  width: 470px;
+  height: auto;
+  clear: both;
+}  
+
+  /* =========== card/connect/panel/ ================ */
+#connect {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 525px;
+  float: left; 
+  margin: 10px 20px;
+} 
+
+.card-columns {
+  justify-content: center;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+h3, .card{
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+h2 {
+  padding: 10px 10px 10px 0;
+  margin: 0; 
+}
+
+.sidebar {
+padding: 10px 20px 10px 20px;
+margin: 30px 0 0 30px;
+}
+
+.icons {
+  width: 62px;
+  height: 62px;
+  margin-bottom: 10px;
+  }
+
+#stack {
+ padding-right: 10px;
+}
+
+footer {
+  clear: both;
+  padding: 30px 0;
+  color: white;
+  background: grey;
+  border-top: 8px solid #4aaaa5;
+  text-align: center;
+  margin: auto;
+}
+
+  /* ========== portfolio items ============*/
+     /* for about me photo */
+#portContainer {
+  margin: 20px 0 10px 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 525px;
+  background-color: white;
+  float: left;
+
+}
+
+.project {
+  width: 470px;
+  height: auto;
+  overflow: auto;
+  position: relative;
+  float: left;
+  margin: 20px 0 25px;
+}
+
+.project img {
+  width: 100%;
+  border: 0 none;
+}  
+
+.project h3{
+  border-bottom: 0;
+  background-color: #4aaaa5;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  padding: 15px;
+  width: 100%;
+  line-height: 20px;
+  margin: 0;
+  font-weight: bold; 
+} 
+
+ /* ============= contact specifics ================== */
+
+#contactContainer {
+  margin: 20px 0 10px 20px;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  max-width: 525px;
+  float: left;
+  }
+
+/* ======= @ media breakpoints =========================  */
+
+/* medium devices tables  */
+@media (min-width: 768px) { 
+ 
+  .navbar-brand {
+    padding-left: 10px;
+  }
+
+  .navbar-nav { 
+    margin-left: auto;
+  }
+
+  .nav-link {
+    margin: 0 0 0 15px;
+    padding: 0 0 0 15px;
+    border-left: 1px solid lightgrey;
+  }
+
+  /* adjust all three pages */
+  #aboutContainer, #portContainer, #contactContainer {
+    max-width: 700px;
+  }
+  /* image adjustments */
+  #about-image {
+    width: 100%;
+    clear: both;
+  }  
+
+  /* for all three connect icons */
+  .card {
+    max-width: 700px;
+  }
+  /* for portfolio adjustments */
+  .project {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 992px) { 
+  .navbar {  
+  max-width: 992px;
+  }  
+} 
